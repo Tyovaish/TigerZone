@@ -328,28 +328,6 @@ int Lake::getPotentialPoints() {
 	return  potentialPoints;
 
 };
-int main(){
-	Feature * f1=new Lake(false,0);
-	Feature * f2=new Lake(false,2);
-	Feature * f3=new Lake(false,2);
-	Feature * f4=new Lake(true,3);
-	Feature * f5=new Lake(true,3);
-	f1->merge(f2);
-	f1->merge(f4);
-	f1->merge(f5);
-	
-	f2->merge(f3);
-	f3->merge(f1);
-	f1->addTiger(1);
-	f5->addTiger(1);
-	int a=0,b=0;
-	f1->checkIfScored(a,b);	
-	if(f1->canPlaceTiger()){
-		cout<<"you can place tiger"<<endl;
-	}
-	cout<<a<<" "<<b<<endl;
-	
-}
 //Jungle
 Jungle::Jungle() {
 	visited = false;
@@ -659,15 +637,4 @@ int GameTrail::getPotentialPoints() {
 	}
 	potentialPoints = scoringFactor*(roadSize + numberOfPrey - numberOfCrocodiles);
 	return scoringFactor*(roadSize + numberOfPreyLeft);
-};
-
-int main(){
-	Feature *f1=new Lake(false,1);
-	Feature * f2=new Lake(true,3);
-	Feature *f3=new Lake(true,3);
-	Feature * f5=new Lake(false,3);
-	f1->merge(f2);
-	f1->merge(f3);
-	
-	
 };
