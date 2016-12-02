@@ -27,7 +27,7 @@ public:
 	void addTiger(int player); //place player Tiger
 	void addCrocodile(); //Place Crocodile
 	virtual int getPotentialPoints() = 0; //Returns potential points
-	vector<Feature*> getConnectedFeatures();
+	vector<Feature*> getConnectedFeatures();//Returns vector of connected features
 	bool hasP1Tiger();
 	bool hasP2Tiger();
 };
