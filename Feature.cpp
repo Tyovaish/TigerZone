@@ -4,11 +4,11 @@
 #include <cmath>
 
 //Feature
-Feature::Feature() {}
-bool Feature::isVisited() {
+Feature::Feature() {} //Abstract Feature Class
+bool Feature::isVisited() {  //Returns if a feature has been visted
 	return visited;
 }
-void Feature::setVisited(bool v) {
+void Feature::setVisited(bool v) { //Sets 
 	visited = v;
 }
 vector<Feature*> Feature::getConnectedFeatures() {
