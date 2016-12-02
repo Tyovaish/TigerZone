@@ -8,7 +8,7 @@ Feature::Feature() {} //Abstract Feature Class
 bool Feature::isVisited() {  //Returns if a feature has been visted
 	return visited;
 }
-void Feature::setVisited(bool v) { //Sets 
+void Feature::setVisited(bool v) { //Sets  the bool value to visited
 	visited = v;
 }
 vector<Feature*> Feature::getConnectedFeatures() {
