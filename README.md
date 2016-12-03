@@ -5,3 +5,7 @@ How to Start TigerZone Client
 4. Copy and Paste Files From Clients to Source Folder In The New Project
 5. Build the Solution in Windows Visual Studio
 6. Run Program by Starting Without Debuging
+
+
+
+All component files can be compiled in g++ standard c++14 with stated heading files
